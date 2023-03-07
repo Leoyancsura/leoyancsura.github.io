@@ -206,6 +206,29 @@ body{
     color: var(--color4);
 }
 
+.bt-imprimir{
+    font-size: 25px;
+    padding: 10px 20px;
+    width: 40%;
+    margin: 40px 0 40px 130px;
+    background-color: var(--color4);
+    border: none;
+    outline: none;
+    color: var(--izquierda-color);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bt-imprimir:hover{
+    background-color: var(--color1);
+    box-shadow: 0 0 10px rgba(0,0,0, .5);
+    color: var(--color2);
+}
+
+
+
 /*-- ========================================================================================= --*/
 
 /*-- ========== estilos contenedor Derecha ========== --*/
