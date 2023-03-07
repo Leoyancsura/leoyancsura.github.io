@@ -1,0 +1,299 @@
+/*-- ========== Importamos el estilo de letra Roboto y Yellowtail========== --*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Yellowtail&display=swap');
+
+/*-- ========== Selecciona el elemento raíz del documento: <html> en el caso de HTML ========== --*/
+:root{
+    --izquierda-color:#3B3936;
+    --derecha-color:#B2BEBF;
+    --color1:#486966;
+    --color2: #fff;
+    --color3: #BD2A2E;
+    --color4: #FFB30D;
+}
+
+/*-- ========== Selector universal '*' ========== --*/
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+
+/*-- ========== Grilla Contenido Principal ========== --*/
+.contenido-principal{
+    min-height: 100vh;
+    width: 80%;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+/*-- ========== estilos contenedor Izquierda ========== --*/
+.seccion-izquierda{
+    grid-column: span 2;
+    height: 100%;
+    background-color: var(--izquierda-color);
+}
+
+
+/*-- ========== estilos contenido Izquierda ========== --*/
+.contenido-izquierda{
+    padding: 2rem 3rem;
+}
+
+/*-- ========== estilos seccion Perfil ========== --*/
+.perfil{
+    width: 100%;
+    border-bottom: 2px solid var(--color2);
+}
+
+.perfil img{
+    width: 100%;
+    border-radius: 50%;
+    border: 6px solid var(--derecha-color);
+}
+
+.logo{
+    font-weight: bold;
+    color: var(--color4);
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Yellowtail";
+    text-shadow: 0 0 35px var(--color4);
+}
+
+.logo .color{
+    color: var(--color2);
+    text-align: center;
+    font-family: "Yellowtail";
+}
+
+.nombre{
+    font-size: 2rem;
+    color: var(--color2);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 0;
+}
+
+.profesion{
+    font-size: 1.2rem;
+    color: var(--color4);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 1rem;
+}
+
+/*-- ========== estilos Contacto ========== --*/
+.titulo-principal{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color2);
+    padding-top: 2rem;
+}
+
+.info-contacto ul{
+    padding-top: 2rem;
+}
+
+.info-contacto ul li{
+    padding: .4rem 0;
+    display: flex;
+    align-items: center;
+    color: var(--derecha-color);
+}
+
+.info-contacto ul li i{
+    padding-right: 1rem;
+    font-size: 1.2rem;
+    color: var(--color4);
+}
+
+/*-- ========== estilos habilidades ========== --*/
+.habilidades ul{
+    padding-top: 2rem;
+}
+
+
+.habilidades ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.habilidades li{
+    align-items: center;
+}
+
+.habilidades p{
+    align-items: center;
+}
+
+.habilidades .titulos-habilidades{
+    text-transform: uppercase;
+    color: var(--derecha-color);
+    font-size: 1.1rem;
+    padding-right: 1rem;
+}
+
+.barra-progresiva{
+    width: 100%;
+    height: .4rem;
+    background-color:var(--derecha-color);
+    position: relative;
+    border-radius: 12px;
+}
+
+.progreso{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: var(--color4);
+    border-radius: 12px;
+}
+
+.htlm-progreso{
+    width: 80%;
+}
+.js-progreso{
+    width: 30%;
+}
+.python-progreso{
+    width: 30%;
+}
+.csharp-progreso{
+    width: 50%;
+}
+.autocad-progreso{
+    width: 80%;
+}
+.rhinoceros-progreso{
+    width: 80%;
+}
+
+/*-- ========== Referencias ========== --*/
+.sub-titulo{
+    padding-top: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--color4);
+}
+
+.sub-para{
+    color: var(--color2);
+    padding: .4rem 0;
+}
+
+.contenido-referencias li{
+    color: var(--derecha-color);
+    padding: .2rem 0;
+}
+
+.contenido-referencias li i{
+    padding-right: .5rem;
+    font-size: 1.2rem;
+    color: var(--color4);
+}
+
+/*-- ========================================================================================= --*/
+
+/*-- ========== estilos contenedor Derecha ========== --*/
+.seccion-derecha {
+    grid-column: span 5;
+    height: 100%;
+    background-color: var(--derecha-color);
+}
+
+.foto-encabezado img{
+    width: 100%;
+    height: 20rem;
+    opacity: 50%;
+    border-bottom: 10px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(57, 59, 54), rgba(72, 89, 105), rgba(178, 184, 191));
+    border-image-slice: 1;
+    width:100%;
+}
+
+.contenido-derecha{
+    padding: 1rem 4rem;
+}
+
+.titulo-derecho{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--izquierda-color);
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+
+.titulo-derecho::after{
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 0.2rem;
+    background-color: var(--izquierda-color);
+    border-radius: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*-- ========== estilos contenedor Sobre Mi  ========== --*/
+.sobremi{
+    padding-bottom: 2rem;
+}
+
+.para{
+    line-height: 1.6rem;
+    color: var(--color1);
+    margin-top: .5rem;
+}
+
+/*-- ========== estilos contenedor Experiencia  ========== --*/
+.linea-tiempo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lt-titulo-1{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: var(--izquierda-color);
+    text-transform: uppercase;
+}
+
+.lt-titulo-2{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: var(--color1);
+    text-transform: uppercase;
+}
+
+.contenido-lt{
+    border-left: 1px solid var(--izquierda-color);
+    padding-left: 2rem;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.lt-titulo-2::before{
+    content: "";
+    position: absolute;
+    width: 0.7rem;
+    height: 0.7rem;
+    background-color: var(--color1);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    left: 0;
+}
